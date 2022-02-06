@@ -1,0 +1,31 @@
+.protfolio__project-grid_container {
+  display: grid;
+  padding: 3rem;
+  place-items: center;
+  column-gap: 2rem;
+  row-gap: 3rem;
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+}
+
+/*
+----------------------------------------
+RESPONSIVE
+----------------------------------------
+*/
+
+@media screen and (max-width: 1280px) {
+}
+
+@media screen and (max-width: 1024px) {
+}
+
+@media screen and (max-width: 786px) {
+}
+@media screen and (max-width: 640px) {
+  .protfolio__project-grid_container {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    padding-bottom: 0;
+  }
+}

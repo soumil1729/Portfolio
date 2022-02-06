@@ -1,0 +1,84 @@
+.portfolio__hero {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  grid-template-columns: 1fr 1fr;
+}
+
+.portfolio__hero-content {
+  display: flex;
+  flex-direction: column;
+}
+
+button {
+  transition: all 200ms;
+}
+.portfolio__hero-content_button {
+  font-weight: 600;
+  width: 50%;
+  font-size: 24px;
+  border: none;
+  border-radius: 50px;
+  transition: 0.4s ease;
+  cursor: pointer;
+  color: #fff;
+  background: var(--btn--gradient);
+
+  padding: 1.6rem 3.2rem;
+  opacity: 0.9;
+}
+
+.portfolio__hero-content_button:hover {
+  opacity: 1;
+  background-position: revert;
+}
+.portfolio__hero-content_button:active {
+  box-shadow: rgb(46 49 55 / 15%) 0px 2px 1px inset,
+    rgb(20 20 55 / 30%) 0px 0px 4px inset;
+}
+
+.portfolio__hero-background {
+  width: 95%;
+}
+
+/*
+----------------------------------------
+RESPONSIVE
+----------------------------------------
+*/
+
+@media screen and (max-width: 1280px) {
+}
+
+@media screen and (max-width: 1024px) {
+}
+
+@media screen and (max-width: 786px) {
+  .section__padding {
+    padding: 24px 48px 0;
+  }
+
+  .portfolio__hero-content_button {
+    padding: 1.2rem 1.6rem;
+    font-weight: 500;
+    font-size: 1.8rem;
+  }
+}
+@media screen and (max-width: 640px) {
+  .portfolio__hero {
+    grid-template-columns: 1fr;
+  }
+  .section__padding {
+    padding: 16px 16px 0;
+  }
+
+  .portfolio__hero-content_button {
+    width: 100%;
+    padding: 0.8rem 1.6rem;
+    font-weight: 500;
+    font-size: 1.6rem;
+  }
+  .portfolio__hero-background {
+    display: none;
+  }
+}

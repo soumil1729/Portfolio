@@ -1,0 +1,122 @@
+.portfolio__navbar {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: 1fr;
+  grid-column-gap: 2rem;
+  padding: 2rem 1rem 1rem;
+  align-items: center;
+  justify-content: space-around;
+  color: #fff;
+}
+
+.portfolio__navbar__icon_container {
+  grid-area: 1 / 1 / 2 / 2;
+}
+
+.portfolio__navbar__icon_container a {
+  display: flex;
+  align-items: center;
+}
+
+.portfolio__navbar__icon_container span {
+  font-size: 2rem;
+}
+
+.portfolio__navbar-links_container {
+  grid-area: 1 / 2 / 2 / 4;
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  display: flex;
+  justify-content: space-around;
+  /* gap: 3rem; */
+}
+
+.portfolio__navbar-links_container a:link,
+.portfolio__navbar-links_container a:visited {
+  transition: 0.4s ease;
+  color: rgba(255, 255, 255, 0.75);
+  font-size: 2rem;
+  line-height: 32px;
+}
+
+.portfolio__navbar-links_container a:hover,
+.portfolio__navbar-links_container a:active {
+  color: #fff;
+  opacity: 1;
+  cursor: pointer;
+}
+
+.portfolio__navbar-Social_icons {
+  grid-area: 1 / 5 / 2 / 6;
+  align-self: center;
+  margin-left: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  -webkit-box-align: center;
+}
+
+.portfolio__navbar-Social_icons a:link,
+.portfolio__navbar-Social_icons a:visited {
+  transition: 0.3s ease;
+  color: white;
+  border-radius: 50px;
+  padding: 8px;
+}
+
+.portfolio__navbar-Social_icons a:hover,
+.portfolio__navbar-Social_icons a:active {
+  opacity: 1;
+  background-color: #212d45;
+  transform: scale(1.2);
+  cursor: pointer;
+}
+
+/*
+----------------------------------------
+RESPONSIVE
+----------------------------------------
+*/
+/* 
+@media screen and (max-width: 1280px) {
+}
+
+@media screen and (max-width: 1024px) {
+}
+
+@media screen and (max-width: 786px) {
+  .portfolio__navbar__icon_container {
+    grid-area: 1 / 1 / 2 / 2;
+  }
+} */
+@media screen and (max-width: 640px) {
+  .portfolio__navbar {
+    grid-template-rows: repeat(2, 60px);
+    grid-column-gap: 0.5rem;
+    grid-row-gap: 0.5rem;
+  }
+
+  .portfolio__navbar__icon_container {
+    grid-area: 1 / 1 / 2 / 3;
+  }
+
+  .portfolio__navbar-Social_icons {
+    -webkit-box-align: center;
+    align-items: center;
+    grid-area: 1 / 4 / 2 / 6;
+    margin-right: 3rem;
+  }
+
+  .portfolio__navbar-Social_icons a:link {
+    padding: 1.2rem;
+  }
+
+  .portfolio__navbar-links_container {
+    grid-area: 2 / 2 / 3 / 5;
+  }
+
+  .portfolio__navbar-links_container a {
+    padding: 0.5rem;
+  }
+}

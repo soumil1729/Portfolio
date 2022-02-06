@@ -1,0 +1,33 @@
+.portfolio__list {
+  list-style-type: none;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 4rem;
+  margin: 3rem 0;
+}
+
+/*
+----------------------------------------
+RESPONSIVE
+----------------------------------------
+*/
+
+@media screen and (max-width: 1280px) {
+  .portfolio__list {
+    margin: 6.4rem 0;
+  }
+}
+
+@media screen and (max-width: 786px) {
+  .portfolio__list {
+    gap: 2.4rem;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .portfolio__list {
+    display: flex;
+    flex-direction: column;
+    margin: 3.2rem 0;
+  }
+}

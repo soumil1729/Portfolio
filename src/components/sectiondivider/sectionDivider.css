@@ -1,0 +1,27 @@
+.section__divider {
+  width: 64px;
+  height: 6px;
+  border-radius: 10px;
+  background-color: #fff;
+  background: linear-gradient(270deg, #13adc7 0%, #945dd6 100%);
+  margin: 4rem 0;
+}
+
+.section__divider.two {
+  background: linear-gradient(270deg, #f46737 0%, #945dd6 100%);
+  margin: 0;
+}
+
+@media screen and (max-width: 786px) {
+  .section__divider {
+    width: 48px;
+    height: 4px;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .section__divider {
+    width: 32px;
+    height: 2px;
+  }
+}
