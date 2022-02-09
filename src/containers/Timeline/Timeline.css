@@ -14,9 +14,8 @@
   list-style: none;
   display: flex;
   /* justify-content: space-between; */
-  /* overflow-x: hidden; */
-  margin-left: 32px;
-  margin-bottom: 80px;
+  margin-left: 3.2rem;
+  margin-bottom: 8rem;
 }
 
 .portfolio__CarouselContainer-items:first-of-type {
@@ -27,18 +26,18 @@
   .portfolio__timeline-heading {
     max-width: 672px;
     font-size: 2.4rem;
-    line-height: 25px;
+    line-height: 2.5rem;
   }
 }
 
 @media screen and (max-width: 640px) {
   .portfolio__timeline-heading {
     font-size: 1.6rem;
-    line-height: 22px;
+    line-height: 2.2rem;
   }
 
   .portfolio__CarouselContainer-item {
     justify-content: initial;
-    margin-bottom: 8px;
+    margin-bottom: 0.8rem;
   }
 }

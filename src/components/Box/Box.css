@@ -1,0 +1,67 @@
+.portfolio__accomplishment-item {
+  background: #212d45;
+  border-radius: 1.2rem;
+  height: 14.4rem;
+  padding: 2.4rem;
+}
+
+.portfolio__accomplishment-heading {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 3.6rem;
+  line-height: 4rem;
+  letter-spacing: 0.01em;
+  color: #fff;
+  margin-bottom: 0.8rem;
+}
+
+.portfolio__accomplishment-text {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 24px;
+  letter-spacing: 0.02em;
+  color: rgba(255, 255, 255, 0.75);
+}
+
+/*
+  ----------------------------------------
+  RESPONSIVE
+  ----------------------------------------
+  */
+
+@media screen and (max-width: 786px) {
+  .portfolio__accomplishment-item {
+    height: 135px;
+    padding: 16px;
+  }
+
+  .portfolio__accomplishment-heading {
+    font-size: 28px;
+    line-height: 32px;
+  }
+
+  .portfolio__accomplishment-text {
+    font-size: 16px;
+    line-height: 20px;
+  }
+}
+@media screen and (max-width: 640px) {
+  .portfolio__accomplishment-item {
+    height: 110px;
+    padding: 12px;
+  }
+  .portfolio__accomplishment-item :nth-child(2n) {
+    grid-row: 2;
+  }
+
+  .portfolio__accomplishment-heading {
+    font-size: 24px;
+    line-height: 26px;
+  }
+
+  .portfolio__accomplishment-text {
+    font-size: 10px;
+    line-height: 14px;
+  }
+}

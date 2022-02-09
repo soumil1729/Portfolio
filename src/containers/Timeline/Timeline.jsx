@@ -1,12 +1,12 @@
 import React from 'react';
 import './Timeline.css';
-import { SectionText, SectionTitle } from '../../components';
+import { SectionDivider, SectionText, SectionTitle } from '../../components';
 import { Carousel } from '../../components';
 import { TimeLineData } from '../../constants/constants';
 
 const Timeline = () => {
   return (
-    <section className="section__padding">
+    <section className="section__padding" id="about">
       <SectionTitle>About</SectionTitle>
       <SectionText>
         I am an aspiring web developer with, having good problem solving skills.
@@ -24,11 +24,12 @@ const Timeline = () => {
       <h2 className="portfolio__timeline-heading">My Timeline:</h2>
       <div className="portfolio__CarouselContainer">
         <ul className="portfolio__CarouselContainer-items">
-          {TimeLineData.map((timeline) => (
-            <Carousel data={timeline} />
+          {TimeLineData.map((timeline, i) => (
+            <Carousel key={i} data={timeline} />
           ))}
         </ul>
       </div>
+      {/* <SectionDivider /> */}
     </section>
   );
 };

@@ -1,7 +1,14 @@
 import React from 'react';
 import './App.css';
 import { Navbar } from './components';
-import { Hero, Project, Technologies, Timeline } from './containers';
+import {
+  Hero,
+  Project,
+  Technologies,
+  Timeline,
+  Accomplishment,
+  Footer,
+} from './containers';
 
 const App = () => {
   return (
@@ -12,6 +19,8 @@ const App = () => {
         <Project />
         <Technologies />
         <Timeline />
+        {/* <Accomplishment /> */}
+        <Footer />
       </div>
     </div>
   );

@@ -10,20 +10,20 @@
   flex-direction: column;
 }
 
-button {
-  transition: all 200ms;
-}
 .portfolio__hero-content_button {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   font-weight: 600;
   width: 50%;
-  font-size: 24px;
+  font-size: 2.4rem;
   border: none;
-  border-radius: 50px;
+  border-radius: 5rem;
   transition: 0.4s ease;
   cursor: pointer;
   color: #fff;
   background: var(--btn--gradient);
-
+  gap: 0.8rem;
   padding: 1.6rem 3.2rem;
   opacity: 0.9;
 }
@@ -32,6 +32,7 @@ button {
   opacity: 1;
   background-position: revert;
 }
+
 .portfolio__hero-content_button:active {
   box-shadow: rgb(46 49 55 / 15%) 0px 2px 1px inset,
     rgb(20 20 55 / 30%) 0px 0px 4px inset;
@@ -47,15 +48,9 @@ RESPONSIVE
 ----------------------------------------
 */
 
-@media screen and (max-width: 1280px) {
-}
-
-@media screen and (max-width: 1024px) {
-}
-
 @media screen and (max-width: 786px) {
   .section__padding {
-    padding: 24px 48px 0;
+    padding: 2.4rem 4.8rem 0;
   }
 
   .portfolio__hero-content_button {
@@ -64,12 +59,13 @@ RESPONSIVE
     font-size: 1.8rem;
   }
 }
+
 @media screen and (max-width: 640px) {
   .portfolio__hero {
     grid-template-columns: 1fr;
   }
   .section__padding {
-    padding: 16px 16px 0;
+    padding: 1.6rem 1.6rem 0;
   }
 
   .portfolio__hero-content_button {

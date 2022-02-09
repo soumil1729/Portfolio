@@ -13,14 +13,6 @@ RESPONSIVE
 ----------------------------------------
 */
 
-@media screen and (max-width: 1280px) {
-}
-
-@media screen and (max-width: 1024px) {
-}
-
-@media screen and (max-width: 786px) {
-}
 @media screen and (max-width: 640px) {
   .protfolio__project-grid_container {
     display: flex;

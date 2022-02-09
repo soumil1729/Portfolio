@@ -9,6 +9,7 @@ const Card = ({ proj }) => {
       <div className="portfolio__card-title_content">
         <div className="portfolio__card-title_content-heading3">
           <h3>{title}</h3>
+          <div className="portfolio__card-title_content-divider"></div>
           <div className="portfolio__card-title_content-description">
             {description}
           </div>

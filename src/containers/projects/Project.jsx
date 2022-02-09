@@ -6,7 +6,7 @@ import { Card } from '../../components';
 
 const Project = () => {
   return (
-    <div className="portfolio__projects section__padding">
+    <div className="portfolio__projects section__padding" id="projects">
       <SectionDivider />
       <SectionTitle>Projects</SectionTitle>
       <div className="protfolio__project-grid_container">

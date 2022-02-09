@@ -1,6 +1,7 @@
 import React from 'react';
 import { AiFillGithub, AiFillInstagram, AiFillLinkedin } from 'react-icons/ai';
 import { DiCssdeck } from 'react-icons/di';
+// import { SocialIcons } from '..';
 
 import './navbar.css';
 
@@ -8,7 +9,7 @@ const Navbar = () => {
   return (
     <div className="portfolio__navbar">
       <div className="portfolio__navbar__icon_container">
-        <a href="/#">
+        <a href="#hero">
           <DiCssdeck size="3rem" />
           <span>Portfolio</span>
         </a>
@@ -28,7 +29,7 @@ const Navbar = () => {
         <a href="https://github.com/soumil1729">
           <AiFillGithub size="3rem" />
         </a>
-        <a href="https://github.com/soumil1729">
+        <a href="https://www.linkedin.com/in/soumil007/">
           <AiFillLinkedin size="3rem" />
         </a>
         <a href="https://github.com/soumil1729">

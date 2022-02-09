@@ -5,6 +5,7 @@ import {
   SectionTitle,
   SectionText,
 } from '../../components';
+import { AiFillLinkedin } from 'react-icons/ai';
 
 const Hero = () => {
   return (
@@ -20,9 +21,12 @@ const Hero = () => {
         </SectionText>
         <button
           className="portfolio__hero-content_button"
-          onClick={() => (window.location = 'https:/google.com')}
+          onClick={() =>
+            (window.location = 'https://www.linkedin.com/in/soumil007/')
+          }
         >
-          Learn more
+          Connect On
+          <AiFillLinkedin size="3rem" />
         </button>
       </div>
       <div className="portfolio__hero-background">

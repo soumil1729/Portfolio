@@ -1,0 +1,30 @@
+.portfolio__accomplishments-container {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2.4rem;
+  margin: 2.4rem 0 4rem;
+}
+
+/*
+----------------------------------------
+RESPONSIVE
+----------------------------------------
+*/
+
+@media screen and (max-width: 786px) {
+  .portfolio__accomplishments-container {
+    gap: 1.6rem;
+    margin: 2rem 0 3.2rem;
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  }
+}
+@media screen and (max-width: 640px) {
+  .portfolio__accomplishments-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    max-width: 500px;
+    margin: 24px auto;
+  }
+}

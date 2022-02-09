@@ -78,18 +78,7 @@
 RESPONSIVE
 ----------------------------------------
 */
-/* 
-@media screen and (max-width: 1280px) {
-}
 
-@media screen and (max-width: 1024px) {
-}
-
-@media screen and (max-width: 786px) {
-  .portfolio__navbar__icon_container {
-    grid-area: 1 / 1 / 2 / 2;
-  }
-} */
 @media screen and (max-width: 640px) {
   .portfolio__navbar {
     grid-template-rows: repeat(2, 60px);
